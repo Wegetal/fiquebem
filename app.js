@@ -43,6 +43,9 @@ const connect = (thenFunc, where, res) => {
     }
   );
 };
-app.listen(3000, function(req, res) {
-  console.log("Server Running on 3000");
+
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, function(req, res) {
+  console.log("Server Running on " + PORT);
 });
