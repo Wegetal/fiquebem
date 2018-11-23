@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./build/app.js",
+    "start": "npm install node app.js ",
     "build": "babel app.js -d ./build/app.js",
     "develop": "nodemon  --exec babel-node app.js  3006 --watch . "
   },
