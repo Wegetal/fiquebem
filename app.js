@@ -24,6 +24,10 @@ app.get("/getAllpoints", (req, res) => {
   );
 });
 
+app.get("/", (req, res) => {
+  res.send("eae");
+  res.end();
+});
 const loadFunc = (db, type, res) => {
   let database = db.db("fiquebem");
   database
