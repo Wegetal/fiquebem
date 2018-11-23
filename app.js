@@ -50,6 +50,6 @@ const connect = (thenFunc, where, res) => {
 
 const PORT = process.env.PORT || 8080;
 
-app.listen(PORT, function(req, res) {
+app.listen(8080, function(req, res) {
   console.log("Server Running on " + PORT);
 });
